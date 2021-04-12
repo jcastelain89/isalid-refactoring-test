@@ -1,4 +1,9 @@
 <?php
+namespace App\Src\Context;
+
+use App\Src\Entity\Site;
+use App\Src\Entity\User;
+use App\Src\Helper\SingletonTrait;
 
 class ApplicationContext
 {

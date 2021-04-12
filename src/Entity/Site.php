@@ -1,5 +1,6 @@
 <?php
 
+namespace App\Src\Entity;
 class Site
 {
     public $id;

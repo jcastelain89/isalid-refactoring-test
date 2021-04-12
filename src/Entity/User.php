@@ -1,5 +1,6 @@
 <?php
 
+namespace App\Src\Entity;
 class User
 {
     public $id;
@@ -13,5 +14,11 @@ class User
         $this->firstname = $firstname;
         $this->lastname = $lastname;
         $this->email = $email;
+    }
+
+    public static function getMixedAttributes() {
+        return array(
+            'first_name' => '[user:first_name]'
+        );
     }
 }

@@ -1,5 +1,9 @@
 <?php
 
+namespace App\Src\Entity;
+
+use App\Src\Repository\DestinationRepository;
+
 class Destination
 {
     public $id;
@@ -14,5 +18,11 @@ class Destination
         $this->countryName = $countryName;
         $this->conjunction = $conjunction;
         $this->computerName = $computerName;
+    }
+
+    public static function setDestination($text, $quoteAttributes, $destinationId) {
+        if(strpos($text, $quoteAttributes['destination_link'])){
+            return DestinationRepository::getInstance()->getById($destinationId);
+        }
     }
 }

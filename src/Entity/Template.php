@@ -1,5 +1,7 @@
 <?php
 
+namespace App\Src\Entity;
+
 class Template
 {
     public $id;
