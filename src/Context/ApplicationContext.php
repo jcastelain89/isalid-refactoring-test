@@ -1,6 +1,9 @@
 <?php
+
 namespace App\Src\Context;
 
+include('./src/Entity/Site.php');
+include('./src/Entity/User.php');
 use App\Src\Entity\Site;
 use App\Src\Entity\User;
 use App\Src\Helper\SingletonTrait;

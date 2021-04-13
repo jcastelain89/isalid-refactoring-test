@@ -1,6 +1,8 @@
 <?php
 
 namespace App\Src;
+include('./src/Context/ApplicationContext.php');
+include('./src/Entity/Text.php');
 
 use App\Src\Context\ApplicationContext;
 use App\Src\Entity\Quote;
@@ -37,6 +39,6 @@ class TemplateManager
         $text = new Text($quoteDependencies, $quoteAttributes);
         $_user  = (isset($data['user'])  and ($data['user']  instanceof User))  ? $data['user']  : $APPLICATION_CONTEXT->getCurrentUser();
 
-        return $text->setUserAttributes($text, $userAttributes, $_user);
+        return $text->setUserAttributes($text->text, $userAttributes, $_user);
     }
 }

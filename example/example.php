@@ -1,6 +1,9 @@
 <?php
 
 namespace App\Example;
+include('./src/Entity/Template.php');
+include('./src/Entity/Quote.php');
+include('./src/TemplateManager.php');
 require_once __DIR__ . '/../vendor/autoload.php';
 
 use App\Src\Entity\Quote;

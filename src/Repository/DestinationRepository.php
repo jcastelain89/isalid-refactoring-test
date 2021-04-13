@@ -2,6 +2,7 @@
 
 namespace App\Src\Repository;
 
+include('./src/Entity/Destination.php');
 use App\Src\Entity\Destination;
 use App\Src\Helper\SingletonTrait;
 

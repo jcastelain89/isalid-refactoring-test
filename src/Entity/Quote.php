@@ -2,6 +2,9 @@
 
 namespace App\Src\Entity;
 
+include('./src/Repository/QuoteRepository.php');
+include('./src/Repository/DestinationRepository.php');
+include('./src/Repository/SiteRepository.php');
 use App\Src\Repository\DestinationRepository;
 use App\Src\Repository\QuoteRepository;
 use App\Src\Repository\SiteRepository;

@@ -2,6 +2,8 @@
 
 namespace App\Src\Repository;
 
+include('./src/Repository/Repository.php');
+include('./src/Helper/SingletonTrait.php');
 use App\Src\Entity\Quote;
 use App\Src\Helper\SingletonTrait;
 
